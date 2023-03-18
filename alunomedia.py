@@ -7,7 +7,72 @@ Original file is located at
     https://colab.research.google.com/drive/1ODa8tTZHaU_rjprwwT8MFDh99dKzPlPQ
 """
 
+idade_renata = 14
+idade_fabiana = 18
+dinheiro_Iara = 5000.00
+
+if (idade_renata >= 14 and idade_fabiana == 18 or dinheiro_Iara == 5000.00 ):
+    situação = 'vai viajar'
+else:
+    situação = 'não vai viajar'
+
+print(f'rodrigo {situação} para portugal')
+
+sabeSambar = 'sim'
+gostaFeijoada = 'não'
+torceSelecaoBrasileira = 'sim'
+
+if (sabeSambar == 'sim' or gostaFeijoada == 'sim' and torceSelecaoBrasileira == 'sim'):
+    print('Esse é brasileiro')
+else:
+    print('Esse nao é brasileiro')
+
+temDentes = 'sim'
+temFome = 'nao'
+gosta = 'sim'
+
+if temDentes == 'sim':
+    TDcondicao = 'verdadeiro'
+elif temDentes == 'nao':
+    TDcondicao = 'falso'
+
+if temFome == 'sim':
+    TFcondicao = 'verdadeiro'
+elif temFome == 'nao':
+    TFcondicao = 'falso'
+
+if gosta == 'sim':
+    Gcondicao = 'verdadeiro'
+elif gosta == 'nao':
+    Gcondicao = 'falso'
+
+if Gcondicao == 'falso' or TFcondicao == 'falso':
+    GTFcondicao = 'falso' 
+else:
+    GTFcondicao = 'verdadeiro'
+
+if GTFcondicao == 'verdadeiro' and TDcondicao == 'verdadeiro':
+    Fcondicao = 'verdadeiro'
+else:
+    Fcondicao = 'falso'
+
+print(f'a pessoa precisa ter dentes {TDcondicao} e ter fome {TFcondicao} ou gostar de maca {Gcondicao}')
+
 aluno = input("Digite o nome do aluno: ")
-n1 = int(input("Digite a primeira nota: "))
-n2 = int(input("Digite a segunda nota: "))
-n3 = int(input("Digite a terceira nota: "))
+n1 = float(input("Digite a primeira nota: "))
+n2 = float(input("Digite a segunda nota: "))
+n3 = float(input("Digite a terceira nota: "))
+media = (n1 + n2 + n3)/3
+if media >= 7:
+    situacao = "Aprovado"
+elif media >= 4:
+    situacao = "de recuperação"
+else:
+    situacao = "reprovado"
+print(f"O aluno {aluno} está em situação {situacao} com média {media}")
+
+numero = int(input("Digite o seu numero:"))
+if numero % 2 == 0:
+    print(f"O numero {numero} é Par.")
+else:
+    print(f"O numero {numero} é Impar.")
