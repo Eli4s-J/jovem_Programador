@@ -58,6 +58,15 @@ else:
     Fcondicao = 'falso'
 
 print(f'a pessoa precisa ter dentes {TDcondicao} e ter fome {TFcondicao} ou gostar de maca {Gcondicao}')
+#forma correta de usar 'or' e 'and':
+temDentes = "sim"
+terFome = "sim"
+gostarComer = "sim"
+
+if (temDentes == "sim" or terFome == "sim") and gostarComer == "sim"
+    print("Hora do rango!")
+else:
+    print("Prato vazio :C")
 
 aluno = input("Digite o nome do aluno: ")
 n1 = float(input("Digite a primeira nota: "))
